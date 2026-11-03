@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card">
+    <h1>Todo App</h1>
+
+    <form class="add-form" id="add-form">
+      <input type="text" id="todo-input" placeholder="What needs doing?" autocomplete="off">
+      <button type="submit" class="add-btn">Add</button>
+    </form>
+
+    <div class="toolbar">
+      <p class="tip">Tip: double-click a todo to edit. Press Enter to save.</p>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+    </div>
+
+    <ul class="todo-list" id="todo-list"></ul>
+
+    <div class="footer">
+      <span id="count">0 items left</span>
+      <div>
+        <button class="clear-btn" id="clear-completed">Clear completed</button>
+        <button class="clear-btn" id="clear-all">Clear all</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
